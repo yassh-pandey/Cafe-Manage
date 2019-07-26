@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fire Store</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script>
+</head>
+<body>
+	<div class="app">
+		<h2>Cloud cafe</h2>
+		<div class="container">
+			<div class="form-wrapper">
+				<input type="text" id="cafeName" placeholder="Cafe name">
+				<input type="text" id="cafeCity" placeholder="Cafe city">
+				<div class="button-wrapper">
+					<a href="#">
+						Add Cafe
+					</a>
+				</div>
+			</div>	
+			<div class="list-wrapper">
+				<ul class="list">
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA5e2MJysBRAL4yPCJ79GhiWhtqXj16JUo",
+    authDomain: "firestore-project-c3f30.firebaseapp.com",
+    databaseURL: "https://firestore-project-c3f30.firebaseio.com",
+    projectId: "firestore-project-c3f30",
+    storageBucket: "firestore-project-c3f30.appspot.com",
+    messagingSenderId: "953169327712",
+    appId: "1:953169327712:web:9bc26c71ea8d87a6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
